@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player">
+        <audio id="audio" controls>
+            <source id="audioSource" src="melody-bgm-tamil-love-indian-186668.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+       
+        <div class="controls">
+            <button onclick="previousTrack()">Prev</button>
+            <button onclick="togglePlayPause()" id="playPauseBtn">Play</button>
+            <button onclick="nextTrack()">Next</button>
+        </div>
+        <div class="track-info">
+            <span id="trackTitle">Song Title</span>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
